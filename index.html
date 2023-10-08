@@ -13,12 +13,21 @@
 
     <div class="wr">
         
-        <nav>
-            <label class="switch">
-                <input type="checkbox" id="thmSw">
-                <span class="slider"></span>
-            </label>
-            <p id="thmSts">Light Mode</p>
+        <nav class="row">
+            <div>
+                <label class="switch">
+                    <input type="checkbox" id="thmSw">
+                    <span class="slider"></span>
+                </label>
+                <p id="thmSts">Light Mode</p>
+            </div>
+
+            <form class="search" action="action_page.php">
+                <button type="submit"><img src="./icons/search 1.svg" alt="error"></button>
+                <input type="text" placeholder="Search for your preffered city..." name="search">
+            </form>
+
+            <button class="location"><img src="./icons/current location icon.svg" alt="error"><p>Current Location</p></button>
         </nav>
 
         <div class="m-w">
