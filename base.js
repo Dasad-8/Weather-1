@@ -48,3 +48,34 @@ switchMode.onclick = function () {
         uv.src = "./icons/uv-white 1.svg";
     }
 }
+
+// current location btt
+
+let  city_line = document.getElementById("city_line")
+
+function getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+      alert("Геолокация не поддерживается вашим браузером.");
+    }
+  }
+  
+  function showPosition(position) {
+    let latitude = position.coords.latitude;
+    let longitude = position.coords.longitude;
+ 
+    let url = "https://nominatim.openstreetmap.org/reverse?format=json&lat=" + latitude + "&lon=" + longitude;
+  
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        let city = data.address.city;
+        city_line.value = city;
+
+      })
+      .catch(error => {
+        console.log(error);
+        alert("Ошибка при получении города.");
+      });
+  }
