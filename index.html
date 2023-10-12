@@ -7,15 +7,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="light-mode.css" id="theme">
     <title>Weather width api</title>
 </head>
-<body class="light-theme">
+<body class="bg-light">
 
     <div class="wr">
         
         <nav class="row">
             <div>
-                <label class="switch">
+                <label class="switch" id="switch">
                     <input type="checkbox" id="thmSw">
                     <span class="slider"></span>
                 </label>
@@ -47,7 +48,7 @@
                     </div>
     
                     <div class="sun-t">
-                        <img src="./icons/sunrise-white 1.svg" alt="error">
+                        <img src="./icons/sunrise-white 1.svg" alt="error" id="sunrise">
                         <div>
                             <h5>Sunrise</h5>
                             <p>06:37 AM</p>
@@ -55,7 +56,7 @@
                     </div>
     
                     <div class="sun-t">
-                        <img src="./icons/sunset-white 1.png" alt="error">
+                        <img src="./icons/sunset-white 1.png" alt="error" id="sunset">
                         <div>
                             <h5>Sunset</h5>
                             <p>20:37 AM</p>
@@ -71,13 +72,13 @@
                 <div class="extra-details">
                     <div class="row">
                         <div class="icn">
-                            <img src="./icons/humidity 1.svg" alt="error">
+                            <img src="./icons/humidity 1.svg" alt="error" id="humidity">
                             <p>41%</p>
                             <p class="p-name">Humidity</p>
                         </div>
         
                         <div class="icn">
-                            <img src="./icons/wind 1.svg" alt="error">
+                            <img src="./icons/wind 1.svg" alt="error" id="wind">
                             <p>2km/h</p>
                             <p class="p-name">Wind Speed</p>
                         </div>
@@ -85,13 +86,13 @@
     
                     <div class="row">
                         <div class="icn">
-                            <img src="./icons/pressure-white 1.svg" alt="error">
+                            <img src="./icons/pressure-white 1.svg" id="pressure" alt="error">
                             <p>997hPa</p>
                             <p class="p-name">Pressure</p>
                         </div>
         
                         <div class="icn">
-                            <img src="./icons/uv-white 1.svg" alt="error">
+                            <img src="./icons/uv-white 1.svg" alt="error" id="uv">
                             <p>8</p>
                             <p class="p-name">UV</p>
                         </div>
