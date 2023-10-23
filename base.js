@@ -51,7 +51,7 @@ switchMode.onclick = function () {
 
 // current location btt
 
-let  city_line = document.getElementById("city_line")
+let city_line = document.getElementById("city_line")
 
 function getLocation() {
     if (navigator.geolocation) {
