@@ -196,7 +196,7 @@ h3 {
     font-size: 32px;
     font-weight: 700;
 }
-
+m-w
 p {
     font-size: 20px;
     font-weight: 600;
@@ -286,6 +286,7 @@ p {
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
+    gap: 50px;
 }
 
 .forecast-day {
