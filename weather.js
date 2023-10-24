@@ -48,6 +48,9 @@ async function getApi() {
     const clouds = "overcast";
     const Clouds = "Overcast";
 
+    const cloudy = "cloudy";
+    const Cloudy = "Cloudy";
+
     if (weather.includes(rain)) {
         mainimg.src = "./icons/drizzle 1.svg";
         maintext.innerHTML = Rain ;
@@ -69,13 +72,14 @@ async function getApi() {
 
 
     if (weather.includes(Clear)) {
-        mainimg.src = "./icons/rain 1.svg";
+        mainimg.src = "./icons/clear 3.svg";
         maintext.innerHTML = Clear ;
     } 
     if (weather.includes(clear)) {
         mainimg.src = "./icons/clear 3.svg";
         maintext.innerHTML = Clear ;
     } 
+
 
     if (weather.includes(Clouds)) {
         mainimg.src = "./icons/clouds 1.svg";
@@ -84,6 +88,15 @@ async function getApi() {
     if (weather.includes(clouds)) {
         mainimg.src = "./icons/clouds 3.svg";
         maintext.innerHTML = "Overcast" ;
+    } 
+     
+    if (weather.includes(cloudy)) {
+        mainimg.src = "./icons/clouds 2.png";
+        maintext.innerHTML = Cloudy ;
+    } 
+    if (weather.includes(Cloudy)) {
+        mainimg.src = "./icons/clouds 2.png";
+        maintext.innerHTML = Cloudy ;
     } 
 
 
