@@ -1,4 +1,4 @@
-//работа алисы
+
 const thmSw = document.getElementById('thmSw');
 const thmSts = document.getElementById('thmSts');
 const sunrise = document.getElementById('sunrise');
@@ -50,7 +50,7 @@ switchMode.onclick = function () {
     uv.src = "./icons/uv-white 1.svg";
   }
 }
-//работа жени 
+
 // current location btt
 
 let city_line = document.getElementById("city_line")
