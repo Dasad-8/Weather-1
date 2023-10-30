@@ -29,7 +29,7 @@
             <div class="search">
                 <button id="submit-btt"><img onclick="getApi()" src="./icons/search 1.svg" alt="error"></button>
                 <input type="text" placeholder="Search for your preffered city..." class="city_line" name="search"
-                    id="city_line">
+                    id="city_line" value="">
             </div>
 
             <button class="location" onclick="getLocation()"><img src="./icons/current location icon.svg" alt="error">
@@ -39,9 +39,9 @@
 
         <div class="m-w">
             <section class="main">
-                <h3>Athens</h3>
-                <h1>09:03</h1>
-                <p>Thursday, 31 Aug</p>
+                <h3 id="city_val">Athens</h3>
+                <h1 id="time_line">09:03</h1>
+                <p id="date_line">Thursday, 31 Aug</p>
             </section>
 
             <section class="weather-details">
@@ -114,33 +114,33 @@
                 <h3>5 Days Forecast:</h3>
 
                 <div class="d-frc">
-                    <img src="./icons/clouds 1.svg" alt="error">
-                    <p class="grades-frc">20°C</p>
-                    <p>Friday, 1 Sep</p>
+                    <img id="d_frc_1_img" width="60px" height="60px" src="./icons/clouds 1.svg" alt="error">
+                    <p id="d_frc_1_C" class="grades-frc">20°C</p>
+                    <p id="d_frc_1_date">Friday, 1 Sep</p>
                 </div>
 
                 <div class="d-frc">
-                    <img src="./icons/mist 1.svg" alt="error">
-                    <p class="grades-frc">22°C</p>
-                    <p>Saturday, 2 Sep</p>
+                    <img id="d_frc_2_img" width="60px" height="60px" src="./icons/mist 1.svg" alt="error">
+                    <p id="d_frc_2_C" class="grades-frc">22°C</p>
+                    <p id="d_frc_2_date">Saturday, 2 Sep</p>
                 </div>
 
                 <div class="d-frc">
-                    <img src="./icons/clear 2.svg" alt="error">
-                    <p class="grades-frc">27°C</p>
-                    <p>Sunday, 3 Sep</p>
+                    <img id="d_frc_3_img" width="60px" height="60px" src="./icons/clear 2.svg" alt="error">
+                    <p id="d_frc_3_C" class="grades-frc">27°C</p>
+                    <p id="d_frc_3_date">In 2 days</p>
                 </div>
 
                 <div class="d-frc">
-                    <img src="./icons/drizzle 1.svg" alt="error">
-                    <p class="grades-frc">18°C</p>
-                    <p>Monday, 4 Sep</p>
+                    <img id="d_frc_4_img" width="60px" height="60px" src="./icons/drizzle 1.svg" alt="error">
+                    <p id="d_frc_4_C" class="grades-frc">18°C</p>
+                    <p id="d_frc_4_date">In 3 days</p>
                 </div>
 
                 <div class="d-frc">
-                    <img src="./icons/rain 1.svg" alt="error">
-                    <p class="grades-frc">16°C</p>
-                    <p>Tuesday, 5 Sep</p>
+                    <img id="d_frc_5_img" width="60px" height="60px" src="./icons/rain 1.svg" alt="error">
+                    <p id="d_frc_5_C" class="grades-frc">16°C</p>
+                    <p id="d_frc_5_date">In 4 days</p>
                 </div>
             </section>
 
@@ -149,47 +149,43 @@
 
                 <div class="times">
                     <div class="day">
-                        <p class="h-f">12:00</p>
-                        <img src="./icons/clear 3.svg" alt="error">
-                        <p>26°C</p>
-                        <div>
-                            <img src="./icons/navigation 1.svg" alt="error">
-                            <p>3km/h</p>
-                        </div>
+                        <p class="h-f">06:00</p>
+                        <img width="70px" height="70px"  src="./icons/clear 3.svg" alt="error">
+                        <p >26°C</p>
+                        <img  src="./icons/navigation 1.svg" alt="error">
+                        <p id="">3km/h</p>
                     </div>
 
                     <div class="day">
-                        <p class="h-f">15:00</p>
-                        <img src="./icons/clear 3.svg" alt="error">
-                        <p>27°C</p>
-                        <div>
-                            <img src="./icons/navigation 2.png" alt="error">
-                            <p>2km/h</p>
-                        </div>
+                        <p class="h-f">10:00</p>
+                        <img width="70px" height="70px"  src="./icons/clear 3.svg" alt="error">
+                        <p >27°C</p>
+                        <img src="./icons/navigation 2.png" alt="error">
+                        <p >2km/h</p>
                     </div>
 
                     <div class="day">
-                        <p class="h-f">18:00</p>
-                        <img src="./icons/clouds 2.png" alt="error">
-                        <p>27°C</p>
+                        <p class="h-f">14:00</p>
+                        <img height="70px" src="./icons/clouds 2.png" alt="error">
+                        <p >27°C</p>
                         <img src="./icons/navigation 1.svg" alt="error">
                         <p>2km/h</p>
                     </div>
 
                     <div class="night">
-                        <p class="h-f">21:00</p>
-                        <img src="./icons/clouds 2.png" alt="error">
-                        <p>25°C</p>
+                        <p >18:00</p>
+                        <img  width="70px" height="70px" src="./icons/clouds 2.png" alt="error">
+                        <p >25°C</p>
                         <img src="./icons/navigation 4.png" alt="error">
-                        <p>3km/h</p>
+                        <p >3km/h</p>
                     </div>
 
                     <div class="night">
-                        <p class="h-f">00:00</p>
-                        <img src="./icons/clear 3.svg" alt="error">
-                        <p>22°C</p>
+                        <p class="h-f">22:00</p>
+                        <img width="70px" height="70px" src="./icons/clear 3.svg" alt="error">
+                        <p >22°C</p>
                         <img src="./icons/navigation 1.svg" alt="error">
-                        <p>3km/h</p>
+                        <p >3km/h</p>
                     </div>
                 </div>
             </section>
