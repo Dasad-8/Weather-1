@@ -4,6 +4,12 @@ html {
 
 body{
     padding-bottom: 50px;
+    height: 950px;
+    height: 1000px;
+    margin: 0px auto;
+    transition: background-color 0.4s;
+    background-color: #1E1E1E;
+    font-family: 'Poppins', sans-serif;
 }
 
 *,
@@ -12,15 +18,6 @@ body{
     box-sizing: inherit;
     margin: 0px;
     padding: 0px;
-}
-
-weather-details body {
-    height: 950px;
-    margin: 0px auto;
-    transition: background-color 0.4s;
-    background-color: #1E1E1E;
-    font-family: 'Poppins', sans-serif;
-    color: #292929;
 }
 
 .wr {
@@ -162,6 +159,10 @@ input::placeholder {
     margin-right: 10px;
 }
 
+.location>p{
+    margin: 0px;
+}
+
 section {
     border-radius: 30px;
     box-shadow: 10px 10px 4px oklch(0% 0 0 / 0.5);
@@ -186,6 +187,7 @@ h1 {
 
 h2 {
     width: fit-content;
+    max-width: 180px;
     font-weight: 700;
     font-size: 80px;
 }
@@ -200,7 +202,7 @@ h3 {
     font-size: 32px;
     font-weight: 700;
 }
-m-w
+
 p {
     font-size: 20px;
     font-weight: 600;
@@ -230,7 +232,7 @@ p {
 
 .f-l {
     margin-top: -10px;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
     display: flex;
     align-items: center;
     font-weight: 600;
@@ -277,20 +279,27 @@ p {
     font-weight: 500;
 }
 
-.row {
+.extra-details {
+    width: fit-content;
+}
+
+.row1 {
     display: flex;
 }
 
-.row>div:first-child {
+.row1:last-child {
+    margin: 0px;
+}
+
+.row1>div:first-child{
     margin-right: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 
 .m-w {
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
-    gap: 50px;
 }
 
 .forecast-day {
@@ -310,7 +319,7 @@ p {
 }
 
 .forecast-h {
-    padding: 15px 80px;
+    padding: 20px 50px;
 }
 
 .forecast-h>h3 {
@@ -321,6 +330,10 @@ p {
     width: fit-content;
 }
 
+.mb{
+    margin-bottom: 50px;
+}
+
 .times {
     display: flex;
 }
@@ -328,8 +341,8 @@ p {
 .times>div {
     display: flex;
     flex-direction: column;
-    height: 270px;
-    padding: 15px 25px;
+    height: fit-content;
+    padding: 15px 25px 0px 25px;
     align-items: center;
     justify-content: space-between;
     text-align: center;
